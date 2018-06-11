@@ -12,7 +12,7 @@ input[type="submit"]{
     letter-spacing: 1px;
     background: rgba(59,103,165,1);
     background: -moz-linear-gradient(45deg, rgba(59,103,165,1) 0%, rgba(56,105,168,1) 5%, rgba(21,117,208,1) 29%, rgba(6,122,224,1) 39%, rgba(6,133,224,1) 62%, rgba(21,166,249,1) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(59,103,165,1)), color-stop(5%, rgba(56,105,168,1)), color-stop(29%, rgba(21,117,208,1)), color-stop(39%, rgba(6,122,224,1)), color-stop(62%, rgba(6,133,224,1)), color-stop(100%, rgba(21,166,249,1)));
+    /*background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(59,103,165,1)), color-stop(5%, rgba(56,105,168,1)), color-stop(29%, rgba(21,117,208,1)), color-stop(39%, rgba(6,122,224,1)), color-stop(62%, rgba(6,133,224,1)), color-stop(100%, rgba(21,166,249,1)));*/
     background: -webkit-linear-gradient(45deg, rgba(59,103,165,1) 0%, rgba(56,105,168,1) 5%, rgba(21,117,208,1) 29%, rgba(6,122,224,1) 39%, rgba(6,133,224,1) 62%, rgba(21,166,249,1) 100%);
     background: -o-linear-gradient(45deg, rgba(59,103,165,1) 0%, rgba(56,105,168,1) 5%, rgba(21,117,208,1) 29%, rgba(6,122,224,1) 39%, rgba(6,133,224,1) 62%, rgba(21,166,249,1) 100%);
     background: -ms-linear-gradient(45deg, rgba(59,103,165,1) 0%, rgba(56,105,168,1) 5%, rgba(21,117,208,1) 29%, rgba(6,122,224,1) 39%, rgba(6,133,224,1) 62%, rgba(21,166,249,1) 100%);
@@ -24,7 +24,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    background-color: #0056b3;
 
 }
 .inscription
@@ -37,9 +37,9 @@ body
 legend
 {
 
-    color: aqua;
+    color: white;
 }
 label
 {
-    color: aqua;
+    color: white;
 }
