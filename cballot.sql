@@ -14,6 +14,8 @@ CREATE TABLE user (
 CREATE TABLE voter (
   idvoter BIGINT NOT NULL AUTO_INCREMENT,
   emailvoter VARCHAR(30) NOT NULL,
+  iduser BIGINT NOT NULL,
   PRIMARY KEY (idvoter),
-  FOREIGN KEY (iduser) REFERENCES user (iduser)
+  FOREIGN KEY (iduser) REFERENCES user(iduser)
 );
+ 
