@@ -18,4 +18,3 @@ CREATE TABLE voter (
   PRIMARY KEY (idvoter),
   FOREIGN KEY (iduser) REFERENCES user(iduser)
 );
- 

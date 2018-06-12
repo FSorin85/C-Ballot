@@ -16,7 +16,7 @@ try {
     $stmt->bindValue('password', $password);
     $stmt->bindValue('email', $email);
     $stmt->execute();
-    header('Location: http://localhost/cballot/Accueil.php');
+    header('Location: http://localhost/cballot/Page_daccueil.html');
 }
 catch (Exception $e) {
     echo 'Exception reçue : ',  $e->getMessage(), "\n";
