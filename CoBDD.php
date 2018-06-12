@@ -16,5 +16,5 @@ $stmt->bindValue('lastname', $lastname);
 $stmt->bindValue('password', $password);
 $stmt->bindValue('email', $email);
 $stmt->execute();
-//header('Location: http://localhost/umake/Carte.php');
+header('Location: http://localhost/cballot/Carte.php');
 exit();
