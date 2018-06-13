@@ -1,0 +1,35 @@
+body{
+    background-color : #CCCCCC;
+    border: 3px grey solid;
+}
+
+.section{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+    font-weight : bold;
+    font-size : 40px;
+}
+
+h2{
+    font-size : 20px;
+    color : black;
+    text-transform:  : uppercase;
+}
+
+#table
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500px;
+}
