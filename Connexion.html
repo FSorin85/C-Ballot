@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+</head>
+<body class="bg-primary text-white">
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="Accueil.html">C Ballot</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="Inscription.html">Inscription</a>
+                        <a class="nav-item nav-link active" href="Connexion.html">Connexion</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </main>
+    <form action="Connexion.php" method="post">
+        <label for="email">Votre e-mail :</label>
+        <input type="email" name="email" id="email"  maxlength="30" required />
+        <label for="passwd">Votre mot de passe :</label>
+        <input type="password" name="passwd" id="passwd"  maxlength="15" required />
+        <input type="submit" name="connexion" value="Connexion">
+    </form>
+</body>
+</html>

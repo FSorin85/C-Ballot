@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Projet C'Ballot</title>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bienvenue sur le projet C'Ballot">
+        <link rel="stylesheet" href="Compte.css">
+    </head>
+    <body>
+    	<header>
+            <p class="flotte">
+                <img src="images.jpg" alt="image"/> 
+            </p>
+            <p style="line-height:65px;">
+                <h3>Mon compte</h3>
+    	</header>
+
+    <nav>
+    	<div id="table">
+    		<div class="table"><a href="Accueil.html">Accueil</a></div>
+    		<div class="table"><a href="Accueil.html">Déconnexion</a></div>
+    	</div>
+    </nav>
+
+    <section>
+    	<h3>Adresses Client</h3>
+                    <form method="post" action="traitement.php">
+                    <label for="adresse_mail"> Rajouter une adresse mail à votre liste</label><br/>
+                    <input type="text" name="adresse_mail" id="adresse_mail" size="50" maxlength="20" />
+                    <input type="submit" value="Envoyer" />
+    </section>
+
+    <section>
+        <h3>Mes informations personnelles</h3>
+    </section>
+
+    <section>
+        <article>
+            <aside>
+                    <form method="post" action="traitement.php">
+                    <label for="adresse_mail">- Modifier mon adresse mail</label><br/>
+                    <input type="text" name="adresse_mail" id="adresse_mail" size="50" maxlength="20" />
+                    <input type="submit" value="Envoyer" />
+
+                    <br />
+                    <label for="pass">- Modifier mon mot de passe</label><br/>
+                    <input type="password" name="pass" id="pass" />
+                    <input type="submit" value="Envoyer" />
+                    </form>
+            </aside>
+        </article>
+    <footer>
+    	<p><i>Copyright 2018 C'Ballot - Toute reproduction interdite</i></p>
+    </footer>
+    </body>
+</html>

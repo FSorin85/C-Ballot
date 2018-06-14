@@ -19,19 +19,23 @@ input[type="submit"]{
     background: linear-gradient(45deg, rgba(59,103,165,1) 0%, rgba(56,105,168,1) 5%, rgba(21,117,208,1) 29%, rgba(6,122,224,1) 39%, rgba(6,133,224,1) 62%, rgba(21,166,249,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b67a5', endColorstr='#15a6f9', GradientType=1 );
 }
-body
+main
 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0056b3;
-
+    left: -100px;
+}
+fieldset{
+    display: flex;
+    justify-content: center;
+    width: 20%;
 }
 .inscription
 {
     display:flex;
     flex-direction:column;
-
 }
 
 legend

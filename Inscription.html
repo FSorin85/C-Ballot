@@ -7,25 +7,39 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="Inscription.css" type="text/css"/>
 </head>
-<body>
-<fieldset>
-    <legend>Inscription</legend>
-    <form method="post" action="CoBDD.php"  class="inscription">
-        <label for="firstname">Votre prénom :</label>
-        <input type="text" name="firstname" id="firstname" maxlength="15" size="15" required autofocus />
-        <label for="lastname">Votre nom :</label>
-        <input type="text" name="lastname" id="lastname" maxlength="15" size="15" required />
-        <label for="passwd">Votre mot de passe :</label>
-        <input type="password" name="passwd" id="passwd"  maxlength="15" required />
-        <label for="passwdVerif">Vérification de votre mot de passe :</label>
-        <input type="password" name="passwdVerif" id="passwdVerif"  maxlength="15" required />
-        <label for="email">Votre e-mail :</label>
-        <input type="email" name="email" id="email"  maxlength="30" required />
-        <label for="email">Vérification de votre e-mail :</label>
-        <input type="email" name="emailVerif" id="emailVerif" maxlength="30" required />
-        <input type="submit" value="S'inscrire">
-    </form>
-</fieldset>
-<script type="text/javascript" src="Inscription.js"></script>
+<body class="bg-primary text-white">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="Accueil.html">C Ballot</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="Inscription.html">Inscription</a>
+                    <a class="nav-item nav-link" href="Connexion.html">Connexion</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <fieldset>
+        <legend>Inscription</legend>
+        <form method="post" action="Inscription.php"  class="inscription">
+            <label for="firstname">Votre prénom :</label>
+            <input type="text" name="firstname" id="firstname" maxlength="15" size="15" required autofocus />
+            <label for="lastname">Votre nom :</label>
+            <input type="text" name="lastname" id="lastname" maxlength="15" size="15" required />
+            <label for="passwd">Votre mot de passe :</label>
+            <input type="password" name="passwd" id="passwd"  maxlength="15" required />
+            <label for="passwdVerif">Vérification de votre mot de passe :</label>
+            <input type="password" name="passwdVerif" id="passwdVerif"  maxlength="15" required />
+            <label for="email">Votre e-mail :</label>
+            <input type="email" name="email" id="email"  maxlength="30" required />
+            <label for="email">Vérification de votre e-mail :</label>
+            <input type="email" name="emailVerif" id="emailVerif" maxlength="30" required />
+            <input type="submit" value="S'inscrire">
+        </form>
+    </fieldset>
+    <script type="text/javascript" src="Inscription.js"></script>
 </body>
 </html>
