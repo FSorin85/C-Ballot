@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<title>Projet C'Ballot</title>
+    	<title>Mon compte</title>
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Bienvenue sur le projet C'Ballot">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="Compte.css">
     </head>
-    <body>
+    <body class="bg-primary text-white">
     	<header>
-            <p class="flotte">
-                <img src="images.jpg" alt="image"/> 
-            </p>
-            <p style="line-height:65px;">
-                <h3>Mon compte</h3>
-    	</header>
-
+            <h3>Mon compte</h3>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="Accueil.html">C Ballot</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="Deconnexion.php">Déconnexion</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
     <nav>
     	<div id="table">
     		<div class="table"><a href="Accueil.html">Accueil</a></div>
     		<div class="table"><a href="Accueil.html">Déconnexion</a></div>
     	</div>
     </nav>
-
     <section>
-    	<h3>Adresses Client</h3>
-                    <form method="post" action="traitement.php">
-                    <label for="adresse_mail"> Rajouter une adresse mail à votre liste</label><br/>
-                    <input type="text" name="adresse_mail" id="adresse_mail" size="50" maxlength="20" />
-                    <input type="submit" value="Envoyer" />
+    	<h3>Ajouter email</h3>
+        <form method="post" action="Compte.php">
+            <label for="email"> Ajouter une adresse mail à votre liste</label><br/>
+            <input type="text" name="email" id="email" size="50" maxlength="30" />
+            <input type="submit" value="Envoyer" />
+        </form>
     </section>
-
-    <section>
-        <h3>Mes informations personnelles</h3>
-    </section>
-
-    <section>
-        <article>
-            <aside>
-                    <form method="post" action="traitement.php">
-                    <label for="adresse_mail">- Modifier mon adresse mail</label><br/>
-                    <input type="text" name="adresse_mail" id="adresse_mail" size="50" maxlength="20" />
-                    <input type="submit" value="Envoyer" />
-
-                    <br />
-                    <label for="pass">- Modifier mon mot de passe</label><br/>
-                    <input type="password" name="pass" id="pass" />
-                    <input type="submit" value="Envoyer" />
-                    </form>
-            </aside>
-        </article>
-    <footer>
-    	<p><i>Copyright 2018 C'Ballot - Toute reproduction interdite</i></p>
-    </footer>
     </body>
 </html>
