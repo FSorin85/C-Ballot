@@ -31,18 +31,20 @@
     </nav>
     <main>
         <section>
-            <h3>Ajouter email</h3>
+            <h3 >Ajouter email </h3>
             <form method="post" action="Compte.php">
                 <label for="email"> Ajouter une adresse mail à votre liste</label><br/>
-                <input type="text" name="email" id="email" size="50" maxlength="30" />
+                <input type="email" name="email" id="email" size="50" maxlength="30"  required/>
                 <input type="submit" value="Envoyer" />
             </form>
         </section>
     </main>
-        <section>
-                <input type="submit" value="Créer sondage" />
-            </form>
-        </section>
-
+        <footer>
+            <section>
+                <form method="post" action="GenerSondage.html" >
+                    <input type="submit" value="Créer sondage" class="bouton"/>
+                </form>
+            </section>
+        </footer>
     </body>
 </html>

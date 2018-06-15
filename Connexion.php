@@ -9,7 +9,7 @@ try {
     $mail = $_POST['email'];
     $mdp = $_POST['password'];
 
-    $pdo = new PDO("mysql:host=localhost;dbname=cballot", 'root', 'tamere');
+    $pdo = new PDO("mysql:host=localhost;dbname=cballot", 'root', '');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $req = $pdo->prepare('SELECT iduser, password FROM user WHERE email="' . (@$_POST['email']) . '" ');
     $req->execute(array(
