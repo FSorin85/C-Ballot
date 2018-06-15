@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Créez votre sondage</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="GenerSondage.css" type="text/css"/>
+</head>
+<body class="bg-primary text-white">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="Accueil.html">C Ballot</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="Compte.html">Mon compte</a>
+                    <a class="nav-item nav-link" href="Deconnexion.php">Déconnexion</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Votre sondage</legend>
+            <form method="post" action="GenerSondage.php"  class="genersondage">
+                <label for="question">La question de votre sondage :</label>
+                <input type="text" name="question" id="question" maxlength="30" size="30" required autofocus />
+                <label for="choix1">Le 1er choix de réponse :</label>
+                <input type="text" name="choix1" id="choix1" maxlength="30" size="30" required />
+                <label for="choix1">Le 2ème choix de réponse :</label>
+                <input type="text" name="choix2" id="choix2" maxlength="30" size="30" required />
+                <label for="choix3">Le 3ème choix de réponse :</label>
+                <input type="text" name="choix3" id="choix3" maxlength="30" size="30" required />
+                <input type="submit" value="Valider">
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>
